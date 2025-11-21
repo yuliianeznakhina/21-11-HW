@@ -38,4 +38,12 @@ int main()
 	}
 	cout << endl;
 
+	arr.erase(arr.begin() + 5);
+
+	for (auto ptr = arr.begin(); ptr != arr.end(); ptr++)
+	{
+		ptr->Print();
+	}
+	cout << endl;
+
 }
