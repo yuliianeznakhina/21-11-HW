@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 class Point
@@ -12,6 +13,22 @@ public:
 	void Print()
 	{
 		cout << "X: " << x << "\tY: " << y << endl;
+	}
+	bool operator>(Point b)
+	{
+		if (x > b.x)
+		{
+			return true;
+		}
+		return false;
+	}
+	bool operator<(Point b)
+	{
+		if (x < b.x)
+		{
+			return true;
+		}
+		return false;
 	}
 };
 
@@ -46,4 +63,11 @@ int main()
 	}
 	cout << endl;
 
+	sort(arr.begin(), arr.end());
+
+	for (auto ptr = arr.begin(); ptr != arr.end(); ptr++)
+	{
+		ptr->Print();
+	}
+	cout << endl;
 }
