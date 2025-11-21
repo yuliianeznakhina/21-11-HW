@@ -1,5 +1,5 @@
 #include<iostream>
-#include<vector>
+#include<deque>
 #include<algorithm>
 using namespace std;
 
@@ -35,7 +35,7 @@ public:
 int main()
 {
 
-	vector<Point> arr;
+	deque<Point> arr;
 	for (int i = 0; i < 10; i++)
 	{
 		arr.push_back(Point());
