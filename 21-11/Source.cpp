@@ -29,4 +29,13 @@ int main()
 		ptr->Print();
 	}
 	cout << endl;
+
+	arr.insert(arr.begin() + 5, Point(10, 10));
+
+	for (auto ptr = arr.begin(); ptr != arr.end(); ptr++)
+	{
+		ptr->Print();
+	}
+	cout << endl;
+
 }
